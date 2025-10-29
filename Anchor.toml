@@ -1,0 +1,22 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+Padd_bonding = "Padd1111111111111111111111111111111111111"
+
+[programs.devnet]
+Padd_bonding = "Padd1111111111111111111111111111111111111"
+
+[programs.mainnet]
+Padd_bonding = "Padd1111111111111111111111111111111111111"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./test/**/*.ts"
